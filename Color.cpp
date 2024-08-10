@@ -1,10 +1,12 @@
 #include "Color.h"
 
+//Constructor
 Color::Color(int r, int g, int b) : red(r), green(g), blue(b)
 {
 
 }
 
+//Initalizes all colors
 const Color Color::RED(255, 0, 0);
 
 const Color Color::YELLOW(255, 255, 0);
@@ -23,6 +25,7 @@ const Color Color::WHITE(255, 255, 255);
 
 const Color Color::GRAY(150, 150, 150);
 
+//Prints out color leter
 std::ostream& operator<<(std::ostream& os, const Color& color)
 {
 	if (color.red == color.green && color.green == color.blue)
